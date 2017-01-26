@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveSwaggerInterfaceClient", "EveSwaggerInterfaceClient\EveSwaggerInterfaceClient.csproj", "{FE688779-DFE6-4CFE-8BE7-F52E1F311AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveSwaggerInterfaceClient.Tests", "EveSwaggerInterfaceClient.Tests\EveSwaggerInterfaceClient.Tests.csproj", "{931824AD-4C78-4E9B-9569-1E6640831003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE688779-DFE6-4CFE-8BE7-F52E1F311AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE688779-DFE6-4CFE-8BE7-F52E1F311AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE688779-DFE6-4CFE-8BE7-F52E1F311AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE688779-DFE6-4CFE-8BE7-F52E1F311AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{931824AD-4C78-4E9B-9569-1E6640831003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{931824AD-4C78-4E9B-9569-1E6640831003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{931824AD-4C78-4E9B-9569-1E6640831003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{931824AD-4C78-4E9B-9569-1E6640831003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
