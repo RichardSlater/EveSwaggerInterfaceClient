@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace EveSwaggerInterfaceClient.Tests.Properties {
+namespace EveSwaggerInterfaceClient.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -20,24 +20,6 @@ namespace EveSwaggerInterfaceClient.Tests.Properties {
         public static Settings Default {
             get {
                 return defaultInstance;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("gr8rTfBAEcLSHOkPQgBoZYFYVcA9kfaedPctIMe70n81")]
-        public string RefreshToken {
-            get {
-                return ((string)(this["RefreshToken"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:38164")]
-        public string InternalServerBaseUrl {
-            get {
-                return ((string)(this["InternalServerBaseUrl"]));
             }
         }
         

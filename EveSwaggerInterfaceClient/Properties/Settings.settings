@@ -1,15 +1,9 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)"
-              GeneratedClassNamespace="EveSwaggerInterfaceClient.Tests.Properties" GeneratedClassName="Settings">
+              GeneratedClassNamespace="EveSwaggerInterfaceClient.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="RefreshToken" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">gr8rTfBAEcLSHOkPQgBoZYFYVcA9kfaedPctIMe70n81</Value>
-    </Setting>
-    <Setting Name="InternalServerBaseUrl" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://localhost:38164</Value>
-    </Setting>
     <Setting Name="LoginServerBaseUrl" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://login.eveonline.com/oauth</Value>
     </Setting>
