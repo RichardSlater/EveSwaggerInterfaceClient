@@ -1,2 +1,10 @@
+version: 1.0.0-beta{build}
+
+build:
+  parallel: true
+
+cache:
+  - packages -> **\packages.config
+
 install:
   - nuget restore
