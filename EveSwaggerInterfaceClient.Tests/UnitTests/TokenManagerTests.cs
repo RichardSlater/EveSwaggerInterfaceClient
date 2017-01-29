@@ -72,11 +72,6 @@ namespace EveSwaggerInterfaceClient.Tests.UnitTests {
         }
 
         [Fact]
-        public void DefaultConstructorShouldNotThrow() {
-            var sut = new TokenManager();
-        }
-
-        [Fact]
         public void ShouldGetAccessTokenForCharacter() {
             var mocks = new MockContainer()
                 .WithValidAccessToken();
@@ -86,6 +81,13 @@ namespace EveSwaggerInterfaceClient.Tests.UnitTests {
             result.ShouldEqual("ACCESSTOKEN");
             mocks.TokenPersistence.VerifyAll();
             mocks.TokenValidator.VerifyAll();
+        }
+
+        [Fact]
+        public void ShouldNotThrow() {
+            var dbName = Guid.NewGuid().ToString();
+            var sut = new TokenManager(dbName);
+            sut.ShouldNotBeNull();
         }
 
         [Fact]

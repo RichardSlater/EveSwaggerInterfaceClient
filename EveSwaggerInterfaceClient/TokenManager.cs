@@ -10,9 +10,9 @@ namespace EveSwaggerInterfaceClient {
         private readonly ITokenService _tokenService;
         private readonly ITokenValidator _tokenValidator;
 
-        public TokenManager() {
+        public TokenManager(string databaseName = "Tokens") {
             _tokenService = new TokenService();
-            _tokenPersistence = new EsentTokenPersistence();
+            _tokenPersistence = new EsentTokenPersistence(databaseName);
             _tokenValidator = new TokenValidator();
         }
 

@@ -2,6 +2,7 @@
 
 using System;
 using Microsoft.Isam.Esent.Collections.Generic;
+using Should;
 using Xunit;
 
 namespace EveSwaggerInterfaceClient.Tests.UnitTests {
@@ -22,6 +23,14 @@ namespace EveSwaggerInterfaceClient.Tests.UnitTests {
         }
 
         [Fact]
+        public void ShouldReturnExistingDatabase() {
+            var sut = EsentTokenPersistence.Get("Tokens");
+            sut.ShouldNotBeNull();
+            var sut2 = EsentTokenPersistence.Get("Tokens");
+            sut2.ShouldNotBeNull();
+        }
+
+        [Fact]
         public void ShouldStoreAndRetreieveValue() {
             var databaseName = Guid.NewGuid().ToString();
             var sut = new EsentTokenPersistence(databaseName);
@@ -30,6 +39,14 @@ namespace EveSwaggerInterfaceClient.Tests.UnitTests {
             var output = sut.Get(TokenType.RefreshToken, "DUMMYCHAR");
             Assert.Equal(testToken.Expiry, output.Expiry);
             Assert.Equal(testToken.Data, output.Data);
+        }
+
+        [Fact]
+        public void ShouldThrowWhenCreatingDuplicateService() {
+            var dbName = Guid.NewGuid().ToString();
+            var sut1 = new EsentTokenPersistence(dbName);
+            Action action = () => new EsentTokenPersistence(dbName);
+            action.ShouldThrow<InvalidOperationException>();
         }
     }
 }
