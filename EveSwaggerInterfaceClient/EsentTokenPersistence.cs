@@ -33,9 +33,7 @@ namespace EveSwaggerInterfaceClient {
         }
 
         public static EsentTokenPersistence Get(string databaseName) {
-            if (Instances.ContainsKey(databaseName)) return Instances[databaseName];
-
-            return new EsentTokenPersistence(databaseName);
+            return Instances.ContainsKey(databaseName) ? Instances[databaseName] : new EsentTokenPersistence(databaseName);
         }
 
         private static string GenerateKey(TokenType tokenType, string character) {
