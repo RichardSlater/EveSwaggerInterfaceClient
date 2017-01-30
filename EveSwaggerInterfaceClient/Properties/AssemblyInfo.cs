@@ -8,11 +8,11 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("EveSwaggerInterfaceClient")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("EVE Swagger Interface (ESI) Client")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Amido Limited")]
 [assembly: AssemblyProduct("EveSwaggerInterfaceClient")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
