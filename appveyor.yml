@@ -2,6 +2,8 @@ version: 1.0.0-beta{build}
 
 build:
   parallel: true
+  publish_nuget: true
+  publish_nuget_symbols: true
 
 cache:
   - packages -> **\packages.config
